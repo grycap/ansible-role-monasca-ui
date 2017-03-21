@@ -69,7 +69,7 @@
     - monasca-install-ui
 
 - name: Collect and compress static files
-  command: "{{ horizon_dashboard_dir }}/{{ item }}"
+  command: "{{ horizon_dir }}/{{ item }}"
   with_items:
     - "manage.py collectstatic --noinput"
     - "manage.py compress --force"

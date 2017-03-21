@@ -18,6 +18,7 @@ monasca_ui_git_repo: "https://git.openstack.org/openstack/monasca-ui.git"
 monasca_git_branch: "master"
 
 ## Horizon
+horizon_dir: "/opt/stack/horizon/openstack_dashboard"
 # dashboard directory
 horizon_dashboard_dir: "/opt/stack/horizon/openstack_dashboard"
 
