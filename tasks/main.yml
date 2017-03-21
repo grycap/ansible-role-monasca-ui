@@ -25,7 +25,7 @@
   pip:
     name: "{{ item }}"
     state: present
-    executable: pip    
+    executable: pip
   register: install_packages
   until: install_packages|success
   retries: 5
@@ -52,9 +52,9 @@
     state: link
   with_items:
     - src: "/opt/cloned-repos/monasca-ui/monitoring/enabled/_50_admin_add_monitoring_panel.py"
-      dest: "{{ horizon_dir }}/openstack_dashboard/local/enabled/_50_admin_add_monitoring_panel.py"
+      dest: "{{ horizon_dashboard_dir }}/local/enabled/_50_admin_add_monitoring_panel.py"
     - src: "/opt/cloned-repos/monasca-ui/monitoring"
-      dest: "{{ horizon_dir }}/monitoring"
+      dest: "{{ horizon_dashboard_dir }}/monitoring"
   register: monasca_links
   tags:
     - monasca-ui-links

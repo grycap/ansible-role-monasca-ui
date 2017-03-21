@@ -19,7 +19,7 @@ monasca_git_branch: "master"
 
 ## Horizon
 # dashboard directory
-horizon_dir: "/opt/stack/horizon/openstack_dashboard"
+horizon_dashboard_dir: "/opt/stack/horizon/openstack_dashboard"
 
 ## Grafana
 grafana_ip_address: "127.0.0.1"
